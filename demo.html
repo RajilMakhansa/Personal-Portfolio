@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajil | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7a0bceab8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>R</span>ajil.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Application Developer</p>
+                <h1>Hi, I'm <span>Rajil</span><br>Makhansa From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- This is About Section -->
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a motivated and dedicated Computer Engineering student currently pursuing a Bachelor of
+                        Technology at
+                        Charusat University. With a strong foundation in Programming Language, Software Development, and
+                        problem-solving. I have a keen interest in areas such as java, Data science, Cyber security,
+                        power BI,Web Development and App
+                        Development. I am eager to apply my technical skills and theoretical knowledge through
+                        internships and projects that
+                        provide real-world experience and contribute to innovative solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li style="margin-bottom: 45px;"><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li style="margin-bottom: 45px;"><span>Web Development</span><br>Web app Development</li>
+                            <li style="margin-bottom: 45px;"><span>App Development</span><br>Building Android/iOS app
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li style="margin-bottom: 45px;"><span>May 2024 - June 2024</span><br>Internship in Web
+                                development at Giriraj Infotech, Rajkot</li>
+                            <li style="margin-bottom: 45px;"><span>May 2023 - June 2023</span><br>Internship in Web
+                                development at Giriraj Infotech, Rajkot</li>
+                            <li style="margin-bottom: 45px;"><span>August 2021 – March 2022</span><br>Internship in App
+                                development at WEE Tech Solution, Surat</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li style="margin-bottom: 45px;"><span>June 2022 - Present</span><br>B-tech in Computer
+                                Engineering, Charusat</li>
+                            <li style="margin-bottom: 45px;"><span>June 2019 - May 2022</span><br>Diploma in Computer
+                                Engineering, Tapi Diploma Engineering College</li>
+                            <li style="margin-bottom: 45px;"><span>April 2017</span><br>Secondary School, P P Savani
+                                Chaitanya Vidhya Sankul</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------service-section----------------------- -->
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design </h2>
+                    <p>Developed a dynamic portfolio website using HTML, CSS, JavaScript, and PHP, showcasing projects,
+                        skills, and achievements with a responsive and user-friendly design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-flutter"></i>
+                    <h2>App Development</h2>
+                    <p>Designed and developed feature-rich mobile applications with intuitive user interfaces using
+                        Flutter, ensuring seamless performance across platforms. Focused on scalable architecture and
+                        real-time data management to enhance user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Analytics </h2>
+                    <p>Proficient in leveraging analytics tools like Power BI to transform complex data into actionable
+                        insights. Skilled in creating interactive dashboards and visualizations to drive data-informed
+                        decision-making.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------portfolio----------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/food.jpg">
+                    <div class="layer">
+                        <h3>Foodeteria App</h3>
+                        <p>Developed a mobile application for searching a near by famous street food which is not shown
+                            in google map , integrating features like user and admin panel in our application .</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/car.jpg">
+                    <div class="layer">
+                        <h3>Scar Drive</h3>
+                        <p> Scar Drive is a website  users to know more about the
+                            car. Moreover,calculating EMI, comparing different models of car,
+                            and providing service cost and maintenance costs on to one platform.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/fire.jpg">
+                    <div class="layer">
+                        <h3>Ofrs</h3>
+                        <p>Online Fire Reporting System is a web-based application. This application is used to report
+                            fire incidents immediately.In this user want to fill up details like name, phone number and
+                            location,etc.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------------------Contact------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>rajilmakhansa2909@gmail.com</p>
+                    <p><i class="fa-duotone fa-solid fa-phone"></i>9712990025</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/rajil.makhamsa/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/home"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/ll_rajil_ll/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rajilmakhansa/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Rajil Resume.pdf"Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email"required>
+                        <input type="number" name="Contact Number" placeholder="Your Contact Number" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 ">Submit </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Rajil Makhansa. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            // Remove active-link class from all tab links
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            // Remove active-tab class from all tab contents
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active-link to the clicked tab and show the corresponding tab content
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjBvG_WF1qQPpjh2xYpc4QDH63sTA78AIuDxIscTq5GdOYGtNE1vHuo9nhkjwPN9SR/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successful"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
